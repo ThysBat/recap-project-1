@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #fcf0e0;
+}
+
+.header {
+  height: 75px;
+  background-color: #b14244;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__headline {
+  outline: black;
+}
