@@ -1,7 +1,8 @@
 /*
 Bookmark Icons by:
 <a href="https://www.flaticon.com/de/kostenlose-icons/lesezeichen" title="lesezeichen Icons">Lesezeichen Icons erstellt von Kiranshastry - Flaticon</a>
-
+Questionmar / Exclamationmark Icon by:
+<a href="https://www.flaticon.com/de/kostenlose-icons/fragezeichen" title="fragezeichen Icons">Fragezeichen Icons erstellt von Vector Squad - Flaticon</a>
 */
 
 * {
@@ -33,9 +34,13 @@ body {
 /*
     Main Styles
 */
+.section-sizing {
+  max-width: 700px;
+  margin: 75px auto;
+}
+
 .question-card {
   background-color: #b14244;
-  margin: 60px 100px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

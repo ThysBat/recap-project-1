@@ -1,0 +1,136 @@
+.profile-header {
+  color: #b14244;
+  text-shadow: 1px 1px 2px gray;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.profile-image-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  /* margin-left: 80px; */
+  border: solid 4px #b14244;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.profile-image {
+  width: 200px;
+  transform: translate(-30px, -20px);
+}
+
+.profile-heading {
+  margin-left: 40px;
+  font-size: 2rem;
+}
+
+.heading {
+  color: #b14244;
+  margin-left: 16px;
+  font-size: 1.5rem;
+}
+
+.profile-description {
+  background-color: #b14244;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.section__game-stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-stat-stylings {
+  background-color: #b14244;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+}
+
+.game-stat-image {
+  height: 40px;
+  margin-right: 12px;
+  margin-left: 6px;
+}
+
+.game-stat-count {
+  margin: 8px;
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+.section__settings {
+  color: #b14244;
+}
+
+.settings-darkmode {
+  margin: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.darkmode-label {
+  font-size: 1.2rem;
+}
+
+/*
+  Dark mode slider styles
+*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  scale: 0.8;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
