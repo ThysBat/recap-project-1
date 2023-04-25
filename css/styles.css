@@ -5,6 +5,16 @@ Questionmar / Exclamationmark Icon by:
 <a href="https://www.flaticon.com/de/kostenlose-icons/fragezeichen" title="fragezeichen Icons">Fragezeichen Icons erstellt von Vector Squad - Flaticon</a>
 */
 
+:root {
+  --primary-color: #fcf0e0;
+  --secondary-color: #b14244;
+  --accent-color: #8f6e5c;
+
+  --shadow-small: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-medium: 2px 2px 8px gray;
+  --shadow-large: 2px 2px 8px gray;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,8 +23,8 @@ Questionmar / Exclamationmark Icon by:
 
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #fcf0e0;
-  color: #fcf0e0;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /*
@@ -22,13 +32,10 @@ body {
 */
 .header {
   height: 75px;
-  background-color: #b14244;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header__headline {
 }
 
 /*
@@ -36,16 +43,16 @@ body {
 */
 .section-sizing {
   max-width: 700px;
-  margin: 75px auto;
+  margin: 100px auto;
 }
 
 .question-card {
-  background-color: #b14244;
+  background-color: var(--secondary-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 2px 8px gray;
+  box-shadow: var(--shadow-medium);
 }
 
 .question-card__image-wrapper {
@@ -60,43 +67,43 @@ body {
   right: 16px;
 }
 
-.question {
+.question-card__question {
   margin: 60px 40px 30px 40px;
   font-size: large;
   text-align: center;
 }
 
-.show-answer-button {
+.question-card__button {
   font-family: "Courier New", Courier, monospace;
-  background-color: #8f6e5c;
-  color: #fcf0e0;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
   font-size: large;
   margin: 30px;
   padding: 12px;
   border: none;
   border-radius: 12px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--shadow-small);
 }
 
-.answer {
+.question-card__answer {
   font-size: large;
   margin: 30px;
   display: none;
 }
 
-.question-tag-container {
+.question-card__tag-container {
   margin: 36px 0px 16px 24px;
   list-style: none;
   align-self: flex-start;
   display: flex;
 }
 
-.question-tag {
-  background-color: #8f6e5c;
+.question-card__tag {
+  background-color: var(--accent-color);
   margin-right: 16px;
   padding: 4px;
   border-radius: 6px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--shadow-small);
 }
 
 /*
@@ -107,14 +114,14 @@ body {
   height: 75px;
   position: fixed;
   bottom: 0;
-  background-color: #b14244;
+  background-color: var(--secondary-color);
 }
 
-.navigation {
+.footer__navigation {
   height: 75px;
 }
 
-.navigation-list {
+.footer__navigation-list {
   height: 100%;
   list-style: none;
   display: flex;
@@ -122,7 +129,7 @@ body {
   align-items: center;
 }
 
-.navigation-list-item {
+.footer__navigation-list-item {
   width: 100%;
   height: 100%;
   display: flex;
@@ -131,7 +138,7 @@ body {
 }
 
 .footer .highlight {
-  background-color: #8f6e5c;
+  background-color: var(--accent-color);
 }
 
 .footer__image {
