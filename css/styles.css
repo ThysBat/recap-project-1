@@ -1,15 +1,10 @@
-/*
-Bookmark Icons by:
-<a href="https://www.flaticon.com/de/kostenlose-icons/lesezeichen" title="lesezeichen Icons">Lesezeichen Icons erstellt von Kiranshastry - Flaticon</a>
-Questionmar / Exclamationmark Icon by:
-<a href="https://www.flaticon.com/de/kostenlose-icons/fragezeichen" title="fragezeichen Icons">Fragezeichen Icons erstellt von Vector Squad - Flaticon</a>
-*/
-
 :root {
+  /* Color variables */
   --primary-color: #fcf0e0;
   --secondary-color: #b14244;
   --accent-color: #8f6e5c;
 
+  /* Shadow variables */
   --shadow-small: 1px 1px 2px rgba(0, 0, 0, 0.6);
   --shadow-medium: 2px 2px 8px gray;
   --shadow-large: 2px 2px 8px gray;
@@ -28,119 +23,9 @@ body {
 }
 
 /*
-    Header Styles
-*/
-.header {
-  height: 75px;
-  background-color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
     Main Styles
 */
 .section-sizing {
   max-width: 700px;
   margin: 100px auto;
-}
-
-.question-card {
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: var(--shadow-medium);
-}
-
-.question-card__image-wrapper {
-  width: 100%;
-  position: relative;
-}
-
-.question-card__bookmark {
-  height: 50px;
-  position: absolute;
-  top: -12px;
-  right: 16px;
-}
-
-.question-card__question {
-  margin: 60px 40px 30px 40px;
-  font-size: large;
-  text-align: center;
-}
-
-.question-card__button {
-  font-family: "Courier New", Courier, monospace;
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  font-size: large;
-  margin: 30px;
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  box-shadow: var(--shadow-small);
-}
-
-.question-card__answer {
-  font-size: large;
-  margin: 30px;
-  display: none;
-}
-
-.question-card__tag-container {
-  margin: 36px 0px 16px 24px;
-  list-style: none;
-  align-self: flex-start;
-  display: flex;
-}
-
-.question-card__tag {
-  background-color: var(--accent-color);
-  margin-right: 16px;
-  padding: 4px;
-  border-radius: 6px;
-  box-shadow: var(--shadow-small);
-}
-
-/*
-    Footer Styles
-*/
-.footer {
-  width: 100%;
-  height: 75px;
-  position: fixed;
-  bottom: 0;
-  background-color: var(--secondary-color);
-}
-
-.footer__navigation {
-  height: 75px;
-}
-
-.footer__navigation-list {
-  height: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.footer__navigation-list-item {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer .highlight {
-  background-color: var(--accent-color);
-}
-
-.footer__image {
-  height: 50px;
 }
