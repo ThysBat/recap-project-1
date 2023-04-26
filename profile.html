@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recap Project 1 - Quiz App</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/profile.css" />
   </head>
   <body>
@@ -14,47 +14,47 @@
     </header>
 
     <main>
-      <section class="section__profile section-sizing">
-        <div class="profile-header">
-          <div class="profile-image-wrapper">
+      <section class="profile section-sizing">
+        <div class="profile__header">
+          <div class="profile__image-wrapper">
             <img
-              class="profile-image"
+              class="profile__image"
               src="./assets/i-like-to-dance.jpg"
               alt="A picture of me"
             />
           </div>
-          <h2 class="profile-heading">David Illies</h2>
+          <h2 class="profile__heading">David Illies</h2>
         </div>
-        <h3 class="heading">About Me</h3>
-        <p class="profile-description">
+        <h3 class="sub-heading">About Me</h3>
+        <p class="profile__description">
           Hello, I am David! I really do like quiz apps. It is a win win
           situation if you play one. Because either you know a lot of question
           and you have fun answering them, or you will learn something new if
           you don't know the answer. Win win!^^
         </p>
       </section>
-      <section class="section__game-stats section-sizing">
-        <div class="game-stat-stylings created-questions">
+      <section class="game-stats section-sizing">
+        <div class="game-stats__stat-container">
           <img
-            class="game-stat-image"
+            class="game-stats__image"
             src="./assets/information.png"
             alt="two speechbubbles with a questionmark and an exclamation mark"
           />
-          <span class="game-stat-count">2</span>
+          <span class="game-stats__counter">2</span>
         </div>
-        <div class="game-stat-stylings bookmarked-questions">
+        <div class="game-stats__stat-container">
           <img
-            class="game-stat-image"
+            class="game-stats__image"
             src="./assets/navbar/bookmark-filled.png"
             alt="A black bookmark"
           />
-          <span class="game-stat-count">1</span>
+          <span class="game-stats__counter">1</span>
         </div>
       </section>
-      <section class="section__settings section-sizing">
-        <h3 class="heading">Settings</h3>
-        <div class="settings-darkmode">
-          <span class="darkmode-label">Darkmode</span>
+      <section class="settings section-sizing">
+        <h3 class="sub-heading">Settings</h3>
+        <div class="settings__darkmode">
+          <span class="settings__darkmode-label">Darkmode</span>
           <label class="switch">
             <input type="checkbox" />
             <span class="slider"></span>
@@ -64,9 +64,9 @@
     </main>
 
     <footer class="footer">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-list-item">
             <a href="index.html"
               ><img
                 class="footer__image"
@@ -74,7 +74,7 @@
                 alt="home icon"
             /></a>
           </li>
-          <li class="navigation-list-item">
+          <li class="footer__navigation-list-item">
             <a href="bookmarks.html"
               ><img
                 class="footer__image"
@@ -82,7 +82,7 @@
                 alt="bookmark icon"
             /></a>
           </li>
-          <li class="navigation-list-item highlight">
+          <li class="footer__navigation-list-item highlight">
             <a href="#"
               ><img
                 class="footer__image"
