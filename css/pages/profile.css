@@ -1,4 +1,6 @@
-@import "styles.css";
+@import "../styles.css";
+@import "../components/header.css";
+@import "../components/footer.css";
 
 .profile__header {
   color: var(--secondary-color);

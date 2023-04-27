@@ -1,0 +1,10 @@
+/*
+    Header Styles
+*/
+.header {
+  height: 75px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
