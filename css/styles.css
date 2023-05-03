@@ -3,6 +3,19 @@
   --primary-color: #fcf0e0;
   --secondary-color: #b14244;
   --accent-color: #8f6e5c;
+  --gradient-primary-secondary: linear-gradient(
+    0deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+
+  --banner-gradient: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 10%,
+    var(--secondary-color) 90%,
+    var(--primary-color) 100%
+  );
 
   /* Shadow variables */
   --shadow-small: 1px 1px 2px rgba(0, 0, 0, 0.6);

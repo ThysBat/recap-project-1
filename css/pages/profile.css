@@ -16,11 +16,15 @@
   border: solid 4px var(--secondary-color);
   border-radius: 50%;
   box-shadow: 1px 1px 4px gray;
+  position: relative;
 }
 
 .profile__image {
-  width: 200px;
-  transform: translate(-30px, -20px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
 }
 
 .profile__heading {
