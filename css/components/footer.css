@@ -4,7 +4,7 @@
     Footer Styles
 */
 .footer {
-  height: 75px;
+  height: var(--banner-height);
   width: 100%;
 
   background-color: var(--secondary-color);
@@ -16,11 +16,11 @@
 }
 
 .footer__navigation {
-  height: 75px;
+  height: inherit;
 }
 
 .footer__navigation-list {
-  height: 100%;
+  height: inherit;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -28,17 +28,17 @@
 }
 
 .footer__navigation-list-item {
+  height: inherit;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer .highlight {
-  background-color: var(--accent-color);
+.footer__image {
+  height: 45px;
 }
 
-.footer__image {
-  height: 50px;
+.footer .highlight {
+  background-color: var(--accent-color);
 }
