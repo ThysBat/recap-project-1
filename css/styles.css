@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   /* Color variables */
   --primary-color: #fcf0e0;
   --secondary-color: #b14244;
   --accent-color: #8f6e5c;
+
+  /* Gradients */
   --gradient-primary-secondary: linear-gradient(
     0deg,
     var(--primary-color) 0%,
@@ -22,14 +30,9 @@
   --shadow-medium: 2px 2px 8px gray;
   --shadow-large: 2px 2px 8px gray;
 
+  /* Custom variables */
   --banner-height: 55px;
   --section-spacing: 64px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -38,13 +41,11 @@ body {
   color: var(--primary-color);
 }
 
-/*
-    Main Styles
-*/
 main {
   margin: calc(var(--banner-height) + (var(--section-spacing) * 0.66)) 16px;
 }
 
+/* Global class stylings */
 .section-sizing {
   max-width: 700px;
   margin: var(--section-spacing) auto;
