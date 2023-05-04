@@ -4,7 +4,7 @@
     Header Styles
 */
 .header {
-  height: 75px;
+  height: var(--banner-height);
   width: 100%;
 
   background-color: var(--secondary-color);
@@ -18,4 +18,6 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  z-index: 10;
 }
