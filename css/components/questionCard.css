@@ -17,8 +17,15 @@
 .question-card__bookmark {
   height: 50px;
   position: absolute;
-  top: -12px;
+  top: -16px;
   right: 16px;
+  content: url("../../assets/navbar/bookmark.png");
+
+  cursor: pointer;
+}
+
+.--bookmarked {
+  content: url("../../assets/navbar/bookmark-filled.png");
 }
 
 .question-card__question {
@@ -40,6 +47,8 @@
   border: none;
   border-radius: 12px;
   box-shadow: var(--shadow-small);
+
+  cursor: pointer;
 }
 
 .question-card__answer {
