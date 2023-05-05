@@ -17,8 +17,13 @@
 .question-card__bookmark {
   height: 50px;
   position: absolute;
-  top: -12px;
+  top: -16px;
   right: 16px;
+  content: url("../../assets/navbar/bookmark.png");
+}
+
+.--bookmarked {
+  content: url("../../assets/navbar/bookmark-filled.png");
 }
 
 .question-card__question {
