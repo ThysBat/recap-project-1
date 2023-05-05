@@ -20,6 +20,8 @@
   top: -16px;
   right: 16px;
   content: url("../../assets/navbar/bookmark.png");
+
+  cursor: pointer;
 }
 
 .--bookmarked {
@@ -45,6 +47,8 @@
   border: none;
   border-radius: 12px;
   box-shadow: var(--shadow-small);
+
+  cursor: pointer;
 }
 
 .question-card__answer {
