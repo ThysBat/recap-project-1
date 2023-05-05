@@ -54,6 +54,9 @@
 .question-card__answer {
   font-size: large;
   margin: 30px;
+}
+
+.--hidden {
   display: none;
 }
 
