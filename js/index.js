@@ -13,9 +13,9 @@ answerButton.addEventListener("click", (event) => {
   const parent = answerButton.parentElement;
   const answer = parent.querySelector('[data-js="answer"]');
 
-  answer.classList.toggle("--hidden");
+  answer.classList.toggle("--display--none");
 
-  if (answer.classList.contains("--hidden")) {
+  if (answer.classList.contains("--display--none")) {
     answerButton.textContent = "Show Answer";
   } else {
     answerButton.textContent = "Hide Answer";
