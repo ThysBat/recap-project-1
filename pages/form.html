@@ -14,27 +14,21 @@
     </header>
 
     <main>
-      <section class="question-card section-sizing">
-        <div class="question-card__image-wrapper">
-          <img
-            class="question-card__bookmark --bookmarked"
-            alt="A transparent bookmark icon with a black outline"
-            data-js="bookmark"
-          />
-        </div>
-        <p class="question-card__question">
-          Lorem ipsum dolor sit amet, consetetur sadipscing
-        </p>
-        <button class="question-card__button" type="button">Show Answer</button>
-        <p class="question-card__answer --display--none">
-          At vero eos et accusam
-        </p>
-        <ul class="question-card__tag-container">
-          <li class="question-card__tag">#lorem</li>
-          <li class="question-card__tag">#est</li>
-          <li class="question-card__tag">#ipsum</li>
-        </ul>
-      </section>
+      <form class="new-question-form">
+        <section class="form__section form__question">
+          <label>Your Question</label>
+          <input type="textarea" />
+        </section>
+        <section class="form__section form__answer">
+          <label>Your answer</label>
+          <input type="textarea" />
+        </section>
+        <section class="form__section form__tag">
+          <label>Tag</label>
+          <input type="text" />
+        </section>
+        <button type="submit">Submit</button>
+      </form>
     </main>
 
     <footer class="footer">
@@ -48,16 +42,16 @@
                 alt="home icon"
             /></a>
           </li>
-          <li class="footer__navigation-list-item highlight">
-            <a href="#"
+          <li class="footer__navigation-list-item">
+            <a href="bookmarks.html"
               ><img
                 class="footer__image"
                 src="../assets/navbar/bookmark.png"
                 alt="bookmark icon"
             /></a>
           </li>
-          <li class="footer__navigation-list-item">
-            <a href="./form.html"
+          <li class="footer__navigation-list-item highlight">
+            <a href="#"
               ><img
                 class="footer__image"
                 src="../assets/navbar/add-circle.png"

@@ -1,0 +1,12 @@
+.new-question-form {
+  color: var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+}
