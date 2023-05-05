@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recap Project 1 - Quiz App</title>
-    <link rel="stylesheet" href="./css/pages/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="/js/index.js" defer></script>
   </head>
   <body>
@@ -25,10 +25,16 @@
         <p class="question-card__question">
           What property flips the axes in flexbox
         </p>
-        <button class="question-card__button show-answer-button" type="button">
+        <button
+          type="button"
+          class="question-card__button show-answer-button"
+          data-js="answer-button"
+        >
           Show Answer
         </button>
-        <p class="question-card__answer">flex-direction</p>
+        <p class="question-card__answer --hidden" data-js="answer">
+          flex-direction
+        </p>
         <ul class="question-card__tag-container">
           <li class="question-card__tag">#html</li>
           <li class="question-card__tag">#flexbox</li>
@@ -48,7 +54,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing
         </p>
         <button class="question-card__button" type="button">Show Answer</button>
-        <p class="question-card__answer">At vero eos et accusam</p>
+        <p class="question-card__answer --hidden">At vero eos et accusam</p>
         <ul class="question-card__tag-container">
           <li class="question-card__tag">#lorem</li>
           <li class="question-card__tag">#est</li>
