@@ -8,7 +8,9 @@
   /* Color variables */
   --primary-color: #fcf0e0;
   --secondary-color: #b14244;
-  --accent-color: #8f6e5c;
+  --accent-color: #cfc0b0;
+  /* --accent-color: #8f6e5c; */
+  --accent-color-2: #ac2b2b;
 
   /* Gradients */
   --gradient-primary-secondary: linear-gradient(

@@ -41,4 +41,5 @@
 
 .footer .highlight {
   background-color: var(--accent-color);
+  /* background-color: var(--secondary-color); */
 }

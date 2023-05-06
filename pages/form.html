@@ -16,24 +16,31 @@
     <main>
       <form class="new-question-form" data-js="new-question-form">
         <section class="form__section form__question">
-          <label for="question-input">Your Question</label>
-          <input type="textarea" name="question-input" />
+          <label for="question-input" class="form__label"
+            ><h3>Your Question</h3></label
+          >
+          <textarea
+            class="form__input"
+            name="question-input"
+            rows="5"
+          ></textarea>
         </section>
         <section class="form__section form__answer">
-          <label for="answer-input">Your answer</label>
-          <input
-            type="textarea"
-            class="form__answer__input"
+          <label for="answer-input" class="form__label"
+            ><h3>Your answer</h3></label
+          >
+          <textarea
+            class="form__input form__answer__input"
             name="answer-input"
-            rows="6"
-            cols="8"
-          />
+            rows="5"
+          >
+          </textarea>
         </section>
         <section class="form__section form__tag">
-          <label for="tag-input">Tag</label>
-          <input type="text" name="tag-input" />
+          <label for="tag-input" class="form__label"><h3>Tag</h3></label>
+          <input type="text" class="form__input" name="tag-input" />
         </section>
-        <button type="submit">Submit</button>
+        <button type="submit" class="form__button">Submit</button>
       </form>
     </main>
 

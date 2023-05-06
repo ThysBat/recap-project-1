@@ -1,5 +1,10 @@
 .new-question-form {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+
+  padding: 12px;
+
+  border-radius: 16px;
+  box-shadow: var(--shadow-medium);
 
   display: flex;
   flex-direction: column;
@@ -11,5 +16,26 @@
   flex-direction: column;
 }
 
-.form__answer__input {
+.form__input {
+  background-color: inherit;
+  color: inherit;
+
+  outline: none;
+  border: solid 2px var(--accent-color);
+  border-radius: 8px;
+
+  margin: 4px 0;
+  padding: 8px;
+}
+
+.form__input:focus {
+  background-color: var(--secondary-color);
+  filter: brightness(110%);
+}
+
+.form__label {
+  margin-left: 16px;
+}
+
+.form__button {
 }
