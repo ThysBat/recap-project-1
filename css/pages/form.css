@@ -38,4 +38,7 @@
 }
 
 .form__button {
+  background-color: var(--accent-color);
+  margin: 12px;
+  padding: 12px 16px;
 }

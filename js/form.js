@@ -47,7 +47,7 @@ function createQuestionCardComponent(data) {
 
   tagListElement.classList.add("question-card__tag-container");
   tagItemElement.classList.add("question-card__tag");
-  tagItemElement.textContent = data["tag-input"];
+  tagItemElement.textContent = "#" + data["tag-input"];
 
   questionCardElement.append(imageWrapperElement);
   imageWrapperElement.append(bookmarkElement);

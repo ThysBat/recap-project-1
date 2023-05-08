@@ -23,6 +23,8 @@
             class="form__input"
             name="question-input"
             rows="5"
+            maxlength="150"
+            required
           ></textarea>
         </section>
         <section class="form__section form__answer">
@@ -33,14 +35,16 @@
             class="form__input form__answer__input"
             name="answer-input"
             rows="5"
+            maxlength="150"
+            required
           >
           </textarea>
         </section>
         <section class="form__section form__tag">
           <label for="tag-input" class="form__label"><h3>Tag</h3></label>
-          <input type="text" class="form__input" name="tag-input" />
+          <input type="text" class="form__input" name="tag-input" required />
         </section>
-        <button type="submit" class="form__button">Submit</button>
+        <button type="submit" class="form__button button">Submit</button>
       </form>
     </main>
 

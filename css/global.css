@@ -9,8 +9,7 @@
   --primary-color: #fcf0e0;
   --secondary-color: #b14244;
   --accent-color: #cfc0b0;
-  /* --accent-color: #8f6e5c; */
-  --accent-color-2: #ac2b2b;
+  --accent-color-2: #8f6e5c;
 
   /* Gradients */
   --gradient-primary-secondary: linear-gradient(
@@ -51,4 +50,16 @@ main {
 .section-sizing {
   max-width: 700px;
   margin: var(--section-spacing) auto;
+}
+
+.button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-small);
+
+  cursor: pointer;
+  align-self: center;
 }
