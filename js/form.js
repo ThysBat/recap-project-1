@@ -1,6 +1,36 @@
 // fetch needed html elements
 const form = document.querySelector('[data-js="new-question-form"]');
 const main = form.parentElement;
+const questionInput = document.querySelector('[data-js="question-input"]');
+const answerInput = document.querySelector('[data-js="answer-input"]');
+const answerTextCounter = document.querySelector(
+  '[data-js="answer-text-counter"]'
+);
+const questionTextCounter = document.querySelector(
+  '[data-js="question-text-counter"]'
+);
+
+// set up text counter content
+const textCounterText = " characters left";
+resetTextCounter();
+
+// add event listener to the question input
+questionInput.addEventListener("input", (event) => {
+  // call the updateTextCounter function with the questionTextCounter element and the return value from the calculateTextCounter function
+  updateTextCounter(
+    questionTextCounter,
+    calculateTextCounter(event.target.value.length, event.target.maxLength)
+  );
+});
+
+// add event listener to the answer input
+answerInput.addEventListener("input", (event) => {
+  // call the updateTextCounter function with the answerTextCounter element and the return value from the calculateTextCounter function
+  updateTextCounter(
+    answerTextCounter,
+    calculateTextCounter(event.target.value.length, event.target.maxLength)
+  );
+});
 
 // add event listener to the new question form submit button
 form.addEventListener("submit", (event) => {
@@ -13,7 +43,21 @@ form.addEventListener("submit", (event) => {
   // reset the form and its focus
   event.target.reset();
   event.target.elements[0].focus();
+  resetTextCounter();
 });
+
+function updateTextCounter(element, number) {
+  element.textContent = `${number} characters left`;
+}
+
+function calculateTextCounter(inputLength, maxLength) {
+  return maxLength - inputLength;
+}
+
+function resetTextCounter() {
+  answerTextCounter.textContent = answerInput.maxLength + textCounterText;
+  questionTextCounter.textContent = questionInput.maxLength + textCounterText;
+}
 
 // create and append the new question card
 function addNewQuestionCard(formData) {
