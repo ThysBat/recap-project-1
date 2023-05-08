@@ -4,12 +4,15 @@ const answerButton = document.querySelector('[data-js="answer-button"]');
 /* Toggle bookmark icon */
 for (const bookmark of bookmarks) {
   bookmark.addEventListener("click", (event) => {
+    event.preventDefault();
     bookmark.classList.toggle("--bookmarked");
   });
 }
 
 /* Toggle answer */
 answerButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
   const parent = answerButton.parentElement;
   const answer = parent.querySelector('[data-js="answer"]');
 
