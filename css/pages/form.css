@@ -16,6 +16,10 @@
   flex-direction: column;
 }
 
+.form__label {
+  margin-left: 16px;
+}
+
 .form__input {
   background-color: inherit;
   color: inherit;
@@ -33,8 +37,9 @@
   filter: brightness(110%);
 }
 
-.form__label {
-  margin-left: 16px;
+.text-counter {
+  align-self: flex-end;
+  filter: opacity(70%);
 }
 
 .form__button {

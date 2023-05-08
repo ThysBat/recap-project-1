@@ -25,7 +25,11 @@
             rows="5"
             maxlength="150"
             required
+            data-js="question-input"
           ></textarea>
+          <small class="text-counter"
+            ><span data-js="question-text-counter"></span
+          ></small>
         </section>
         <section class="form__section form__answer">
           <label for="answer-input" class="form__label"
@@ -37,8 +41,12 @@
             rows="5"
             maxlength="150"
             required
+            data-js="answer-input"
           >
           </textarea>
+          <small class="text-counter"
+            ><span data-js="answer-text-counter"></span
+          ></small>
         </section>
         <section class="form__section form__tag">
           <label for="tag-input" class="form__label"><h3>Tag</h3></label>
