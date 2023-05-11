@@ -1,0 +1,8 @@
+@import "global.css";
+
+@import "./Header/Header.css";
+@import "./Footer/Footer.css";
+@import "./Questioncard/QuestionCard.css";
+
+@import "./Profile/Profile.css";
+@import "./Form/Form.css";

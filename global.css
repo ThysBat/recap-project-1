@@ -11,6 +11,11 @@
   --accent-color: #cfc0b0;
   --accent-color-2: #8f6e5c;
 
+  /* Darkmode color variables */
+  --darkmode-primary-color: #857f72;
+  --darkmode-secondary-color: #faf9f7;
+  --darkmode-accent-color: #27241d;
+
   /* Gradients */
   --gradient-primary-secondary: linear-gradient(
     0deg,
